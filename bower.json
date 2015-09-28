@@ -1,0 +1,10 @@
+{
+  "name": "mignon",
+  "version": "0.0.1",
+  "dependencies": {
+    "system.js": "latest",
+    "jquery": "latest",
+    "backbone": "latest",
+    "underscore": "latest"
+  }
+}
