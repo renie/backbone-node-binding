@@ -5,11 +5,19 @@
 	<title>Document</title>
 </head>
 <body>
-	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="lib/underscore/underscore-min.js"></script>
+	<script src="lib/backbone/backbone-min.js"></script>
 	<script src="lib/Backbone.ModelBinder.js"></script>
 	<script src="lib/Backbone.ModelCollection.js"></script>
-	<script src="User.js"></script>
+	<script src="lib/system.js/dist/system.js"></script>
+	<script>
+		System.config({
+			baseURL: 'app',
+			defaultJSExtensions: true
+		});
+		
+		System.import('main.js');
+	</script>
 </body>
 </html>
